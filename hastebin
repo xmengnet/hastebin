@@ -12,7 +12,7 @@ from select import select
 import argparse
 from subprocess import Popen
 
-url = os.environ.get("HASTEBIN_SERVER_URL", "https://hastebin.com")
+url = os.environ.get("HASTEBIN_SERVER_URL", "https://p.liyp.cc")
 timeout = int(os.environ.get("HASTEBIN_SERVER_TIMEOUT", 5))
 
 def has_data(fd):
@@ -65,7 +65,7 @@ def main():
     help_description += "fetched and displayed instead."
     footer = """environment variables:
   HASTEBIN_CLIPPER (default: 'xclip -sel primary')
-  HASTEBIN_SERVER_URL (default: 'https://hastebin.com')
+  HASTEBIN_SERVER_URL (default: 'https://p.liyp.cc')
   HASTEBIN_SERVER_TIMEOUT (default: 5)
 """
 
